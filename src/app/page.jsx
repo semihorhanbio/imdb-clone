@@ -1,5 +1,5 @@
 import "./globals.css";
 
 export default function Page() {
-    return <h1 className="text-red-400">Home</h1>
+    return <h1></h1>
   }
