@@ -9,6 +9,7 @@ export default function SearchBox() {
     e.preventDefault() 
     if (!search) return 
     router.push(`/search/${search}`) 
+    setSearch('')
   }
   return (
     <form
@@ -19,7 +20,7 @@ export default function SearchBox() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         type="text"
-        placeholder="Search keywords..."
+        placeholder="Search movies..."
         className="w-full h-14 rounded-sm placeholder-gary-500 outline-none bg-transparent flex-1"
       />
       <button
